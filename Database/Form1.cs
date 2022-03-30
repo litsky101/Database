@@ -92,20 +92,9 @@ namespace Database
             {
                if(dgvView.Rows.Count > 0)
                 {
-                    if(string.IsNullOrEmpty(txtLastName.Text))
+                    if(string.IsNullOrEmpty(lblID.Text))
                     {
-                        MessageBox.Show("Please enter last name.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        txtLastName.Focus();
-                    }
-                    else if (string.IsNullOrEmpty(txtFirstName.Text))
-                    {
-                        MessageBox.Show("Please enter first name.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        txtFirstName.Focus();
-                    }
-                    else if (string.IsNullOrEmpty(txtMiddleName.Text))
-                    {
-                        MessageBox.Show("Please enter middle name.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        txtMiddleName.Focus();
+                        MessageBox.Show("Please select data from table before updating.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
